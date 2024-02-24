@@ -1,0 +1,112 @@
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\beamer@sectionpages {1}{2}}
+\headcommand {\beamer@subsectionpages {1}{2}}
+\headcommand {\sectionentry {1}{Things tend to go wrong.}{3}{Things tend to go wrong.}{0}}
+\headcommand {\slideentry {1}{0}{1}{3/4}{}{0}}
+\headcommand {\beamer@framepages {3}{4}}
+\headcommand {\slideentry {1}{0}{2}{5/6}{}{0}}
+\headcommand {\beamer@framepages {5}{6}}
+\headcommand {\slideentry {1}{0}{3}{7/7}{}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\slideentry {1}{0}{4}{8/8}{}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\beamer@sectionpages {3}{8}}
+\headcommand {\beamer@subsectionpages {3}{8}}
+\headcommand {\sectionentry {2}{Exception handling}{9}{Exception handling}{0}}
+\headcommand {\beamer@subsectionpages {9}{8}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{9}{\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$throw$}}
+\headcommand {\slideentry {2}{1}{1}{9/9}{\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$throw$}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\slideentry {2}{1}{2}{10/10}{\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$throw$}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\slideentry {2}{1}{3}{11/11}{\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$throw$}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\slideentry {2}{1}{4}{12/13}{\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$throw$}{0}}
+\headcommand {\beamer@framepages {12}{13}}
+\headcommand {\slideentry {2}{1}{5}{14/14}{\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$throw$}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\slideentry {2}{1}{6}{15/15}{\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$throw$}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\slideentry {2}{1}{7}{16/22}{\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$throw$}{0}}
+\headcommand {\beamer@framepages {16}{22}}
+\headcommand {\beamer@subsectionpages {9}{22}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{23}{\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$try$-\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$catch$}}
+\headcommand {\slideentry {2}{2}{1}{23/23}{\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$try$-\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$catch$}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\slideentry {2}{2}{2}{24/24}{\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$try$-\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$catch$}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\slideentry {2}{2}{3}{25/25}{\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$try$-\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$catch$}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\slideentry {2}{2}{4}{26/26}{\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$try$-\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$catch$}{0}}
+\headcommand {\beamer@framepages {26}{26}}
+\headcommand {\slideentry {2}{2}{5}{27/33}{\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$try$-\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$catch$}{0}}
+\headcommand {\beamer@framepages {27}{33}}
+\headcommand {\slideentry {2}{2}{6}{34/35}{\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$try$-\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$catch$}{0}}
+\headcommand {\beamer@framepages {34}{35}}
+\headcommand {\slideentry {2}{2}{7}{36/37}{\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$try$-\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$catch$}{0}}
+\headcommand {\beamer@framepages {36}{37}}
+\headcommand {\slideentry {2}{2}{8}{38/38}{\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$try$-\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$catch$}{0}}
+\headcommand {\beamer@framepages {38}{38}}
+\headcommand {\slideentry {2}{2}{9}{39/44}{\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$try$-\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$catch$}{0}}
+\headcommand {\beamer@framepages {39}{44}}
+\headcommand {\slideentry {2}{2}{10}{45/45}{\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$try$-\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$catch$}{0}}
+\headcommand {\beamer@framepages {45}{45}}
+\headcommand {\slideentry {2}{2}{11}{46/47}{\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$try$-\lstinline [language = {[11]C++}, basicstyle = \ttfamily ]$catch$}{0}}
+\headcommand {\beamer@framepages {46}{47}}
+\headcommand {\beamer@sectionpages {9}{47}}
+\headcommand {\beamer@subsectionpages {23}{47}}
+\headcommand {\sectionentry {3}{Exception safety}{48}{Exception safety}{0}}
+\headcommand {\beamer@subsectionpages {48}{47}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{48}{Exception safety guarantees}}
+\headcommand {\slideentry {3}{1}{1}{48/48}{Exception safety guarantees}{0}}
+\headcommand {\beamer@framepages {48}{48}}
+\headcommand {\slideentry {3}{1}{2}{49/49}{Exception safety guarantees}{0}}
+\headcommand {\beamer@framepages {49}{49}}
+\headcommand {\slideentry {3}{1}{3}{50/50}{Exception safety guarantees}{0}}
+\headcommand {\beamer@framepages {50}{50}}
+\headcommand {\slideentry {3}{1}{4}{51/51}{Exception safety guarantees}{0}}
+\headcommand {\beamer@framepages {51}{51}}
+\headcommand {\slideentry {3}{1}{5}{52/53}{Exception safety guarantees}{0}}
+\headcommand {\beamer@framepages {52}{53}}
+\headcommand {\slideentry {3}{1}{6}{54/55}{Exception safety guarantees}{0}}
+\headcommand {\beamer@framepages {54}{55}}
+\headcommand {\slideentry {3}{1}{7}{56/57}{Exception safety guarantees}{0}}
+\headcommand {\beamer@framepages {56}{57}}
+\headcommand {\slideentry {3}{1}{8}{58/59}{Exception safety guarantees}{0}}
+\headcommand {\beamer@framepages {58}{59}}
+\headcommand {\beamer@subsectionpages {48}{59}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{60}{Exception specification}}
+\headcommand {\slideentry {3}{2}{1}{60/60}{Exception specification}{0}}
+\headcommand {\beamer@framepages {60}{60}}
+\headcommand {\slideentry {3}{2}{2}{61/62}{Exception specification}{0}}
+\headcommand {\beamer@framepages {61}{62}}
+\headcommand {\slideentry {3}{2}{3}{63/64}{Exception specification}{0}}
+\headcommand {\beamer@framepages {63}{64}}
+\headcommand {\slideentry {3}{2}{4}{65/65}{Exception specification}{0}}
+\headcommand {\beamer@framepages {65}{65}}
+\headcommand {\slideentry {3}{2}{5}{66/66}{Exception specification}{0}}
+\headcommand {\beamer@framepages {66}{66}}
+\headcommand {\slideentry {3}{2}{6}{67/67}{Exception specification}{0}}
+\headcommand {\beamer@framepages {67}{67}}
+\headcommand {\slideentry {3}{2}{7}{68/68}{Exception specification}{0}}
+\headcommand {\beamer@framepages {68}{68}}
+\headcommand {\slideentry {3}{2}{8}{69/69}{Exception specification}{0}}
+\headcommand {\beamer@framepages {69}{69}}
+\headcommand {\slideentry {3}{2}{9}{70/70}{Exception specification}{0}}
+\headcommand {\beamer@framepages {70}{70}}
+\headcommand {\slideentry {3}{2}{10}{71/71}{Exception specification}{0}}
+\headcommand {\beamer@framepages {71}{71}}
+\headcommand {\slideentry {3}{2}{11}{72/72}{Exception specification}{0}}
+\headcommand {\beamer@framepages {72}{72}}
+\headcommand {\slideentry {3}{2}{12}{73/73}{Exception specification}{0}}
+\headcommand {\beamer@framepages {73}{73}}
+\headcommand {\slideentry {3}{2}{13}{74/74}{Exception specification}{0}}
+\headcommand {\beamer@framepages {74}{74}}
+\headcommand {\beamer@partpages {1}{74}}
+\headcommand {\beamer@subsectionpages {60}{74}}
+\headcommand {\beamer@sectionpages {48}{74}}
+\headcommand {\beamer@documentpages {74}}
+\headcommand {\gdef \inserttotalframenumber {45}}

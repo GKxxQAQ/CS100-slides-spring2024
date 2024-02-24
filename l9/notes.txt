@@ -1,0 +1,46 @@
+P15 这里（以及以后）我们经常使用 copy 这个词作为名词表示“拷贝行为”。包括 C++ 中还会用 move 作为名词表示“移动行为”。
+
+P17 根据 C++ 标准，这个 return 在 C++11 以前、关闭 NRVO 优化的情况下的确会发生两次拷贝：
+```cpp
+#include <iostream>
+
+struct A {
+  A(const A &) {
+    std::cout << "copy ctor called\n";
+  }
+  A &operator=(const A &) {
+    std::cout << "copy assignment operator called\n";
+    return *this;
+  }
+  A() {}
+};
+
+A foo() {
+  A x;
+  return x;
+}
+
+int main() {
+  A y;
+  y = foo();
+}
+```
+使用 `g++-13 b.cpp -o b -fno-elide-constructors` 编译后，可以看到 A 的拷贝构造函数和拷贝赋值运算符各被调用了一次。然而 C 标准对于 return 的语义说得非常模糊，其实根本没说清楚到底会发生几次，而且 GCC 对于 C 语言似乎没有一个像 `-fno-elide-constructors` 这样的选项可以关闭 NRVO 优化。由于这个优化已经被编译器采用了近三十年，我觉得的确没有必要去探究没有优化的情况下的行为了。
+
+NRVO 优化，全称叫 Named Return Value Optimization ，就是将这样的代码
+```c
+struct Student fun(void) {
+  struct Student s = something();
+  some_operations(s);
+  return s;
+}
+student_list[i] = fun();
+```
+当做这样来编译：
+```c
+void fun(struct Student *sp) {
+  *sp = something();
+  some_operations(*sp);
+}
+fun(&student_list[i]);
+```

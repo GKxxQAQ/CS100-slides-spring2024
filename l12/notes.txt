@@ -1,0 +1,3 @@
+P12 "compile" 用作 linking verb 表示“能通过编译”，也就是没有编译错误的意思。学生可能没见过这种用法。
+
+P15 强调先搞清楚是在 declaration 里还是在 expression 里，是作为 type 的一部分还是作为一个操作运算对象的运算符。

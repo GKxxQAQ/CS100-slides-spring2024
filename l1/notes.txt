@@ -1,0 +1,39 @@
+首先，蓝字大概率是链接，可以点开。
+
+P8 在 Windows 上如果写 `gcc hello.c -o hello` （`-o hello` 没有 `.exe`），生成的文件名也叫 `hello.exe`。`.exe` 会被自动补上。
+
+P9 ```c
+int main(void) {
+  // The program starts here.
+  statement_1;
+  statement_2;
+  // ...
+  statement_n;
+}
+```
+这里说的 The program starts here. 并不严谨，只是初学时先这样说，以后会改。事实上在 `main` 函数的第一条语句执行之前还会对各种具有 static storage duration 的对象进行初始化，甚至还可能涉及特殊的编译器扩展，比如 GCC 支持将一个函数标记为 `__attribute__((constructor))`，这样的函数会在执行 `main` 的第一条语句之前先被执行一次。
+
+P13,14 在 C23 以前，一个函数的参数列表如果是空的，它表示“接受未知的参数”，而非不接受参数。这一点和 C++、Python 等语言不同，是 C 特有的历史遗留问题。例如
+```c
+void foo();
+int main(void) {
+  foo(1, 2.0, "hello"); // 合法
+  foo(42); // 合法
+}
+```
+以上代码中，声明函数 `foo` 时没有说明它接受什么参数，因此下面调用 `foo` 的时候无论如何传参都是合法的。这是十分危险的行为，它放弃了对于参数的类型检查。如果后面我们定义 `foo` 的时候仅接受一个 `int` 参数，那么第一个调用 `foo(1, 2.0, "hello")` 就是 undefined behavior：
+```c
+void foo();
+int main(void) {
+  foo(1, 2.0, "hello"); // undefined behavior. 2.0 和 "hello" 会被如何处理？
+  foo(42); // ok
+}
+void foo(int x) {
+  // do something with x
+}
+```
+所以在 C23 以前，参数列表空着和写一个 `void` 的含义是不同的。许多人习惯声明 `main` 的时候写成 `int main()`，这在 C++ 中以及 C23 以后是合法的，而在 C23 以前如果要说它合法，只能将它理解为属于 "another implementation-defined signature"。
+
+P14 还有一些人可能会把 `main` 函数的返回值类型 `int` 省略，即直接写成 `main(void) { ... }`，甚至和上一条的情况组合变成 `main() { ... }`。C89 规定，如果声明了一个函数而没有写出它的返回值类型，则返回值类型默认为 `int`，但 C99 删除了这一规则。编译器为了向后兼容可能仍然会默许这一行为，但它绝不是一个好的编程习惯。我们始终要编写符合标准的代码。
+此外，还有一个广泛讨论的问题就是 `void main(void)` 到底合不合法。这种写法通常来自于非常老的代码（那时语言的标准化尚未完善和普及），或者来自谭浩强那样的课本，或者来自于一些嵌入式系统代码。在那些特殊的系统中，程序并不需要返回一个状态值给 hosted environment，人们就理所当然地认为 `main` 函数应该没有返回值了。无论如何，在那些需要程序返回状态值的运行环境中，这种写法都会导致返回值是无法预知的，调用者也就不知道这个程序是否正常运行了。比方说在 CS100 的 OJ 上，这样的程序几乎肯定会被判定为 Runtime Error。
+那么 `void main` 到底合法还是不合法？标准对于 `main` 函数的签名的规定中，第三条写的是 "another implementation-defined signature"，也就是说只要编译器和机器支持这种写法，它就符合这一条，也就符合标准。值得一提的是，C++ 标准在这个地方的规定是 "another implementation-defined signature, with int as return type"，所以 `void main` 必然不是合法的 C++ 代码。

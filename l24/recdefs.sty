@@ -1,0 +1,23 @@
+\usepackage{xcolor}
+\usepackage{amsthm}
+
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\gray}[1]{\textcolor{gray}{#1}}
+\newcommand{\teal}[1]{\textcolor{teal}{#1}}
+
+\newcommand{\graybox}[1]{\colorbox[rgb]{0.9, 0.9, 0.9}{#1}}
+
+\newcommand{\mono}[1]{\texttt{#1}}
+\newcommand{\bluett}[1]{\blue{\mono{#1}}}
+\newcommand{\redtt}[1]{\red{\mono{#1}}}
+
+\newenvironment{question}{\begin{alertblock}{Question}}{\end{alertblock}}
+\newenvironment{notice}{\begin{alertblock}{Notice}}{\end{alertblock}}
+\theoremstyle{definition}
+\newtheorem{thm}{Theorem}
+\newtheorem{dfn}{Definition}
+\newtheorem{rmk}{Remark}
+
+\newcommand{\pinkbox}[1][\textwidth]{\makebox[0pt][l]{\color{pink}\rule[-3.5pt]{#1}{12pt}}}
+\newcommand{\scriptsizepinkbox}[1][\textwidth]{\makebox[0pt][l]{\color{pink}\rule[-2pt]{#1}{8pt}}}

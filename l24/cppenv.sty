@@ -1,0 +1,24 @@
+\usepackage{listings, xcolor}
+
+\lstset{
+    columns = fixed,
+    basewidth = {0.5em},
+    breaklines = true,
+    backgroundcolor = \color{white},
+    keywordstyle = \color[RGB]{40, 40, 255},
+    numberstyle = \footnotesize\color{darkgray},
+    commentstyle = \ttfamily\color{violet},
+    basicstyle = \small\ttfamily,
+    stringstyle = \ttfamily\color[RGB]{128, 0, 0},
+    showstringspaces = false,
+    language = {[11]C++},
+    escapechar = \@
+}
+
+\lstnewenvironment{cpp}[1][\footnotesize]{\lstset{language = {[11]C++}, basicstyle = #1\ttfamily}}{}
+
+\lstnewenvironment{txt}{\lstset{language = {[plain]TeX}}}{}
+
+\newcommand{\boxilcpp}[1]{\colorbox[rgb]{0.95, 0.95, 0.95}{\lstinline[language = {[11]C++}]$#1$}}
+
+\newcommand{\ilcpp}[1]{\lstinline[language = {[11]C++}, basicstyle = \ttfamily]$#1$}

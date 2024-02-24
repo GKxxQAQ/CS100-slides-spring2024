@@ -1,0 +1,14 @@
+\frametitle{Move operations are often \ilcpp {noexcept}.}
+Since C++11, a reasonable optimization is to \textbf{move} elements, instead of copying them.
+
+  Unlike copy, \textbf{move} of an element is a modifying operation.
+  \begin{itemize}
+    \item The old elements are modified during this procedure.
+    \item If a move throws an exception, there is no way of rolling back!
+  \end{itemize}
+
+  Due to this consideration, \ilcpp{std::vector<T>} uses the move operation of \ilcpp{T} \textbf{only when it is \ilcpp{noexcept}}.
+  \begin{cpp}
+    for (auto old_data = m_storage; old_data != m_end_of_elem; ++old_data)
+      construct_object_at(p++, @\redtt{std::move\_if\_noexcept(*old\_data)}@);
+  \end{cpp}
